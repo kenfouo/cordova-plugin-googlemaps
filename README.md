@@ -1,3 +1,6 @@
+Contribution
+Your sponsorship will be of great use to us. PayPal Link: https://paypal.me/Borientmk?country.x=LS&locale.x=fr_XC
+
 # Cordova GoogleMaps plugin for Android, iOS and Browser v2.7.1
 
 | Download | Build test (multiple_maps branch)|
@@ -38,7 +41,7 @@
 ## Quick install
 
   ```
-  $> cordova plugin add cordova-plugin-googlemaps
+  $> cordova plugin add github:kenfouo/cordova-plugin-googlemaps --save 
   ```
 
 Then set your Google Maps API keys into your `config.xml` (Android / iOS).
