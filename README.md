@@ -4,13 +4,13 @@
 
 This is a copy of https://github.com/mapsplugin/cordova-plugin-googlemaps? We modified it to provide iOS 14 support with cordova. It also fixes the problem of the Obsolete googlemaps SDK for 03 years.
 
+### Contribution
+
+Your sponsorship will be of great use to us. PayPal Link: https://paypal.me/Borientmk?country.x=LS&locale.x=fr_XC
 
 | Download | Build test (multiple_maps branch)|
 |----------|---------------------------|
 | [![](https://img.shields.io/npm/dm/cordova-plugin-googlemaps.svg)](https://npm-stat.com/charts.html?package=cordova-plugin-googlemaps) |[![](https://travis-ci.org/mapsplugin/cordova-plugin-googlemaps.svg?branch=multiple_maps)](https://travis-ci.org/mapsplugin/cordova-plugin-googlemaps/branches) |
-
-### Contribution
-Your sponsorship will be of great use to us. PayPal Link: https://paypal.me/Borientmk?country.x=LS&locale.x=fr_XC
 
   This plugin displays Google Maps in your application.
   This plugin uses these libraries for each platforms:
