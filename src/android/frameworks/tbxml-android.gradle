@@ -9,11 +9,46 @@ repositories {
 }
 
 dependencies {
-  implementation(name:'tbxml-android', ext:'aar')
+  implementation(name:'tbxml-android', ext:'aar'){
+   exclude group: 'com.android.volley'
+  }
+  implementation 'com.android.volley:volley:1.2.0'
 }
 
+/* 
+  Erreur : 
+  Execution failed for task ':app:checkDebugAarMetadata'.
+> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+   > Could not find com.google.android.libraries.maps:maps:3.8.2.
+     Searched in the following locations:
+       - https://dl.google.com/dl/android/maven2/com/google/android/libraries/maps/maps/3.8.2/maps-3.8.2.pom
+       - https://repo.maven.apache.org/maven2/com/google/android/libraries/maps/maps/3.8.2/maps-3.8.2.pom
+       - https://maven.google.com/com/google/android/libraries/maps/maps/3.8.2/maps-3.8.2.pom
+       - https://jcenter.bintray.com/com/google/android/libraries/maps/maps/3.8.2/maps-3.8.2.pom
+       - file:/E:/CordovaProjects/Further%20Market/platforms/android/app/src/main/libs/maps-3.8.2.jar
+       - file:/E:/CordovaProjects/Further%20Market/platforms/android/app/src/main/libs/maps.jar
+       - file:/E:/CordovaProjects/Further%20Market/platforms/android/app/libs/maps-3.8.2.jar
+       - file:/E:/CordovaProjects/Further%20Market/platforms/android/app/libs/maps.jar
+       - file:/E:/CordovaProjects/Further%20Market/platforms/android/libs/maps-3.8.2.jar
+       - file:/E:/CordovaProjects/Further%20Market/platforms/android/libs/maps.jar
+       - https://jitpack.io/com/google/android/libraries/maps/maps/3.8.2/maps-3.8.2.pom
+     Required by:
+         project :app
+         
+  Pour corriger le probleme j'ai replacé à la ligne 12
+  implementation(name:'tbxml-android', ext:'aar')
+
+  Par 
+
+  implementation(name:'tbxml-android', ext:'aar'){
+   exclude group: 'com.android.volley'
+  }
+  implementation 'com.android.volley:volley:1.2.0'
+
+ */
+
 android {
-  compileSdkVersion 26
+  compileSdkVersion 28
 
   packagingOptions {
     exclude 'README'
