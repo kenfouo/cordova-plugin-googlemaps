@@ -246,7 +246,7 @@
     <resource-file src="src/android/frameworks/tbxml-android.aar" target="app/src/libs/tbxml-android.aar"/> -->
 
 
-    <framework src="src/android/frameworks/pgm-custom.gradle" custom="true" type="gradleReference"/>
+    <!-- <framework src="src/android/frameworks/pgm-custom.gradle" custom="true" type="gradleReference"/> -->
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <meta-data android:name="com.google.android.geo.API_KEY" android:value="${GOOGLE_MAPS_ANDROID_API_KEY}"/>
