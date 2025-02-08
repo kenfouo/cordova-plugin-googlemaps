@@ -154,7 +154,20 @@ android {
     //----------
 
     dependencies {
+      //---
       implementation 'com.google.android.libraries.maps:maps:3.1.0-beta'
+      /* implementation ('com.google.android.libraries.maps:maps:3.1.0-beta') {
+          exclude group: 'com.google.android.gms', module: 'play-services-base'
+          exclude group: 'com.google.android.gms', module: 'play-services-basement'
+      } */
+
+      configurations.all {
+        resolutionStrategy {
+            force 'com.google.android.gms:play-services-base:18.1.0' //---15.0.1
+            force 'com.google.android.gms:play-services-basement:18.1.0' //---15.0.1
+        }
+      }
+
       implementation 'com.android.support:multidex:1.0.3'
     }
 

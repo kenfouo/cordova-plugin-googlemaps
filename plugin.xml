@@ -241,16 +241,15 @@
     <source-file src="src/android/plugin/google/maps/PluginStreetViewPanorama.java" target-dir="src/plugin/google/maps"/>
     <source-file src="src/android/plugin/google/maps/IPluginView.java" target-dir="src/plugin/google/maps"/>
 
-<!--     <framework src="src/android/frameworks/tbxml-android.gradle" custom="true" type="gradleReference"/>
+    <framework src="src/android/frameworks/tbxml-android.gradle" custom="true" type="gradleReference"/>
     <resource-file src="src/android/frameworks/tbxml-android.aar" target="libs/tbxml-android.aar"/>
-    <resource-file src="src/android/frameworks/tbxml-android.aar" target="app/src/libs/tbxml-android.aar"/> -->
+    <resource-file src="src/android/frameworks/tbxml-android.aar" target="app/src/libs/tbxml-android.aar"/>
 
 
-    <!-- <framework src="src/android/frameworks/pgm-custom.gradle" custom="true" type="gradleReference"/> -->
+    <framework src="src/android/frameworks/pgm-custom.gradle" custom="true" type="gradleReference"/>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCIL-UvWkVr7MFHqUU3XE5Du0IoAqbGZ4c"/>
-      <!-- <meta-data android:name="com.google.android.geo.API_KEY" android:value="${GOOGLE_MAPS_ANDROID_API_KEY}"/> -->
+      <meta-data android:name="com.google.android.geo.API_KEY" android:value="${GOOGLE_MAPS_ANDROID_API_KEY}"/>
       <!-- Google Play Services SDK -->
       <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
       <!-- for Android 9 or above -->
